@@ -42,50 +42,67 @@
 		<div class="module corner">
 		</div>
 	</header>
-	<div class="col">
-		<div class="module hello">
+	<div class="article">
+		<div class="top">
+			<h1>
+			Long-scrolling informational site
+			</h1>
+			<img id="webdesign1"src="img/banner_webdesign1_280.png" alt="web design 1 final project" data-fullsrc="img/banner_webdesign1_650.png"/>
+			<ul>
+				<li><a href="http://fnelson.studio.mcad.edu/webdesign1/final/index.html" target="_blank">Go to site<i class="fa fa-external-link"></i></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2>Objective</h2>
 			<p>
-				<span>Hi, I'm Frank Nelson.</span>This is my work from the MCAD Interactive Design and Marketing program.
+				Choosing any topic and any design style, create an informational site. 
+			</p>
+			<h2>Implementation</h2>
+			<p>
+				I'd been seeing a lot of single-page long-scrolling sites being used for start-ups, designers, <a href="http://www.spelltower.com/" target="_blank">products</a>... etc. and thought it would be a good fit. My wife was 7 months pregnant at the time, so we were talking a lot about education, and how we wanted to raise our child, so the topic of immersion education was an easy choice.
 			</p>
 			<p>
-				My goal is to be a front-end developer, so the  work here focuses on dev and interactivity.
+				From a design side, I wanted to work with bold colors. I naturally am pretty conservative with colors, so I wanted to stretch myself that way.
+			</p>
+			<p>
+				I chose a system where each section of content would have its own color background, and re-used those colors for the text and graphics of the other sections to create some consistency and uniformity when the backgrounds are so different.
+			</p>
+			<p>
+				From a coding standpoint, it's a very simple site. Just one page with jump links on an nav fixed to the top of the page. I did learn how to create the full-width element with a nested centered element, which was very satisfying.
+			</p>
+			<h2>What I would do differently now</h2>
+			<p>
+				It's a static site, so I would make it responsive. I would also take a look at the nav and see if it makes more sense somewhere else. I think it's a little distracting on the top. Also given it's strctural simplicity, I could look at beefing up the content and adding more interactive elements like animations.
 			</p>
 		</div>
-		<div class="module half">
-			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
+	</div>
+	<div class="side">
+		<div class="module">
+			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_160.png" alt="webdev1" data-fullsrc="img/webDev1_240.png"/></a>
 		</div>
-		<div class="module half">
+		<div class="module">
+			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
+		</div>
+		<div class="module">
 			<a href="webdesign2.html" class="overlay pink"><img id="webdesign2" src="img/webdesign2_160.png"alt="web design 2 final project: responsive site"data-fullsrc="img/webdesign2_240.png"/></a>
 		</div>
 		<div class="module">
-			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_320.png" alt="webdev1" data-fullsrc="img/webDev1_480.png"/></a>
-		</div>
-	</div>
-	<div class="col">
-		<div class="module half">
-			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
-		</div>
-		<div class="module half corner-top">
+			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
 		</div>
 		<div class="module">
-			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_320.png"data-fullsrc="img/webdesign1_480.png"/></a>
-		</div>
-		<div class="module half">
 			<a href="webdev2.html" class="overlay pink"><img id="webdev2"src="img/webdev2_160.png" alt="web development 2 final project: javascript plug-in"data-fullsrc="img/webdev2_160.png"/></a>
 		</div>
-		<div class="module half pink">
-		</div>
-		<div class="module half corner-right">
+		<div class="module corner-right">
 		</div>
 	</div>
-</div> <!-- end #wrapper -->
+</div> <!-- end #wrapper --> 
 </body>
 <script src="_/js/responsive-enhance.js"></script>
 <script>
 responsiveEnhance(document.getElementById('colorExp'), 200);
 responsiveEnhance(document.getElementById('webdesign2'), 200);
 responsiveEnhance(document.getElementById('headshot'), 200);
-responsiveEnhance(document.getElementById('webdev1'), 360);
+responsiveEnhance(document.getElementById('webdev1'), 200);
 responsiveEnhance(document.getElementById('webdesign1'), 360);
 responsiveEnhance(document.getElementById('webdev2'), 200);
 </script>

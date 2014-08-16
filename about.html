@@ -42,40 +42,57 @@
 		<div class="module corner">
 		</div>
 	</header>
-	<div class="col">
-		<div class="module hello">
+	<div class="article">
+		<div class="top">
+			<h1>
+			About me
+			</h1>
+			<img id="colorheadshot"src="img/headshotC_120.png" alt="headshot in color" class="headshot" data-fullsrc="img/headshotC_260.png"/>
+		</div>
+		<div class="content">
 			<p>
-				<span>Hi, I'm Frank Nelson.</span>This is my work from the MCAD Interactive Design and Marketing program.
+				I came to coding and Web development almost by accident: In my final semester of undergrad a beginning HTML was the only class that fit my schedule. I took to it immediately. It was like playing with Legos again: write the code and see the result!
 			</p>
 			<p>
-				My goal is to be a front-end developer, so the  work here focuses on dev and interactivity.
+				After graduation I continued to tinker with HTML and CSS, but I decided to take it seriously after getting laid off from a job I wasn't passionate about in the summer of 2012.
+			</p>
+			<p>
+				My time in the IDM program has been transformative for me. I'm much more advanced in design and coding, and I have a more rounded skillset that includes UX design, project management and marketing.
+			</p>
+			<p>
+				And the transformation wasn't just in education. Here's a list of things that happened in my life since I started the IDM program:
+					<ul>
+						<li><i class="fa fa-thumbs-o-up green"></i> Got a job</li>
+						<li><i class="fa fa-thumbs-o-down red"></i> Moved</li>
+						<li><i class="fa fa-thumbs-o-up green"></i> Got a better job</li>
+						<li><i class="fa fa-thumbs-o-up green "></i> Got married</li>
+						<li><i class="fa fa-thumbs-o-up green"></i> Became a father</li>
+						<li><i class="fa fa-thumbs-o-down red"></i> Moved again</li>
+						<li><i class="fa fa-thumbs-o-up green"></i> Got a promoted</li>
+					</ul>
+			</p>
+			<p>
+				Going forward I want to pursue becoming a front-end developer. I'm passionate about writing efficient, semantic code and expanding my knowledge to new tools and languages.
 			</p>
 		</div>
-		<div class="module half">
-			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
+	</div>
+	<div class="side">
+		<div class="module">
+			<a href="webdev1.html" class="overlay pink"><img id="webdev1" src="img/webDev1_160.png" alt="webdev1" data-fullsrc="img/webDev1_240.png"/></a>
 		</div>
-		<div class="module half">
+		<div class="module">
 			<a href="webdesign2.html" class="overlay pink"><img id="webdesign2" src="img/webdesign2_160.png"alt="web design 2 final project: responsive site"data-fullsrc="img/webdesign2_240.png"/></a>
 		</div>
 		<div class="module">
-			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_320.png" alt="webdev1" data-fullsrc="img/webDev1_480.png"/></a>
-		</div>
-	</div>
-	<div class="col">
-		<div class="module half">
-			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
-		</div>
-		<div class="module half corner-top">
+			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_160.png"data-fullsrc="img/webdesign1_240.png"/></a>
 		</div>
 		<div class="module">
-			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_320.png"data-fullsrc="img/webdesign1_480.png"/></a>
-		</div>
-		<div class="module half">
 			<a href="webdev2.html" class="overlay pink"><img id="webdev2"src="img/webdev2_160.png" alt="web development 2 final project: javascript plug-in"data-fullsrc="img/webdev2_160.png"/></a>
 		</div>
-		<div class="module half pink">
+		<div class="module">
+			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
 		</div>
-		<div class="module half corner-right">
+		<div class="module pink corner-right">
 		</div>
 	</div>
 </div> <!-- end #wrapper -->
@@ -84,9 +101,9 @@
 <script>
 responsiveEnhance(document.getElementById('colorExp'), 200);
 responsiveEnhance(document.getElementById('webdesign2'), 200);
-responsiveEnhance(document.getElementById('headshot'), 200);
-responsiveEnhance(document.getElementById('webdev1'), 360);
-responsiveEnhance(document.getElementById('webdesign1'), 360);
+responsiveEnhance(document.getElementById('colorheadshot'), 160);
+responsiveEnhance(document.getElementById('webdev1'), 200);
+responsiveEnhance(document.getElementById('webdesign1'), 200);
 responsiveEnhance(document.getElementById('webdev2'), 200);
 </script>
 </html>

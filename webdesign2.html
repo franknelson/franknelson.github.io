@@ -23,6 +23,7 @@
 	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 	  ga('create', 'UA-48773040-2', 'mcad.edu');
 	  ga('send', 'pageview');
+
 	</script>
 </head>
 <body>
@@ -31,6 +32,7 @@
 		<div class="logo">
 			<h1><a href="index.html">fn</a></h1>
 		</div>
+		
 		<div class="module social">
 			<ul>
 				<li><a href="https://twitter.com/TaumpyTearrs" target="_blank"><i class="fa fa-twitter-square"></i> <span>twitter</span></a></li>
@@ -41,41 +43,53 @@
 		</div>
 		<div class="module corner">
 		</div>
-	</header>
-	<div class="col">
-		<div class="module hello">
+	</header>	
+	<div class="article">
+		<div class="top">
+			<h1>
+			Responsive informational site
+			</h1>
+			<img id="webdesign2"src="img/banner_webdesign2_280.png" alt="web design 1 final project" data-fullsrc="img/banner_webdesign2_650.png"/>
+			<ul>
+				<li><a href="http://fnelson.studio.mcad.edu/webdesign2/final/index.html" target="_blank">Go to Site <i class="fa fa-external-link"></i></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2>Objective</h2>
 			<p>
-				<span>Hi, I'm Frank Nelson.</span>This is my work from the MCAD Interactive Design and Marketing program.
+				Using an existing responsive grid system, build a four-page responsive site dedicated to a public service, with each page having a different layout. 
+			</p>
+			<h2>Implementation</h2>
+			<p>
+				I chose <a href="http://www.getskeleton.com/" target="_blank">Skeleton</a> as my grid system. Skeleton uses up to 16 columns, but I used 12. This allowed me to use 6, 4, and 3-column layouts to differentiate each page.
 			</p>
 			<p>
-				My goal is to be a front-end developer, so the  work here focuses on dev and interactivity.
+				The header, footer, nav and image/video clear all the columns on each page, creating consistency in the layout while the number of column change. The footer and nav are set to cover the full width of the browser window. This makes the layout feel like it's part of the larger viewing area, even though it's centered horizontally.
 			</p>
-		</div>
-		<div class="module half">
-			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
-		</div>
-		<div class="module half">
-			<a href="webdesign2.html" class="overlay pink"><img id="webdesign2" src="img/webdesign2_160.png"alt="web design 2 final project: responsive site"data-fullsrc="img/webdesign2_240.png"/></a>
-		</div>
-		<div class="module">
-			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_320.png" alt="webdev1" data-fullsrc="img/webDev1_480.png"/></a>
+			<p>
+				I used a couple different methods to accomplish the responsive aspect of the design, but primarily I used the <code>float:left</code> style and then manipulated the widths of the columns so they would sit next to eachother and then stack on top of eachother as the viewing portal gets smaller:
+			</p>
+			<p><img src="img/webdesign2_3.png" alt="4-column layout"/></p>
+			<p><img src="img/webdesign2_4.png" alt="4-column layout"/></p>
 		</div>
 	</div>
-	<div class="col">
-		<div class="module half">
-			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
-		</div>
-		<div class="module half corner-top">
+	<div class="side">
+		<div class="module">
+			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_160.png" alt="webdev1" data-fullsrc="img/webDev1_240.png"/></a>
 		</div>
 		<div class="module">
-			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_320.png"data-fullsrc="img/webdesign1_480.png"/></a>
+			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
 		</div>
-		<div class="module half">
+		<div class="module">
+			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_160.png"data-fullsrc="img/webdesign1_240.png"/></a>
+		</div>
+		<div class="module">
 			<a href="webdev2.html" class="overlay pink"><img id="webdev2"src="img/webdev2_160.png" alt="web development 2 final project: javascript plug-in"data-fullsrc="img/webdev2_160.png"/></a>
 		</div>
-		<div class="module half pink">
+		<div class="module">
+			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
 		</div>
-		<div class="module half corner-right">
+		<div class="module pink corner-right">
 		</div>
 	</div>
 </div> <!-- end #wrapper -->
@@ -83,10 +97,10 @@
 <script src="_/js/responsive-enhance.js"></script>
 <script>
 responsiveEnhance(document.getElementById('colorExp'), 200);
-responsiveEnhance(document.getElementById('webdesign2'), 200);
+responsiveEnhance(document.getElementById('webdesign2'), 360);
 responsiveEnhance(document.getElementById('headshot'), 200);
-responsiveEnhance(document.getElementById('webdev1'), 360);
-responsiveEnhance(document.getElementById('webdesign1'), 360);
+responsiveEnhance(document.getElementById('webdev1'), 200);
+responsiveEnhance(document.getElementById('webdesign1'), 200);
 responsiveEnhance(document.getElementById('webdev2'), 200);
 </script>
 </html>

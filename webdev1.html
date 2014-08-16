@@ -31,6 +31,7 @@
 		<div class="logo">
 			<h1><a href="index.html">fn</a></h1>
 		</div>
+		
 		<div class="module social">
 			<ul>
 				<li><a href="https://twitter.com/TaumpyTearrs" target="_blank"><i class="fa fa-twitter-square"></i> <span>twitter</span></a></li>
@@ -42,40 +43,74 @@
 		<div class="module corner">
 		</div>
 	</header>
-	<div class="col">
-		<div class="module hello">
+	<div class="article">
+		<div class="top">
+			<h1>
+			Pixel Perfect: Recreating an existing site
+			</h1>
+			<img id="webdev1"src="img/banner_webdev1_280.png" alt="web development 1 final project" data-fullsrc="img/banner_webdev1_650.png"/>
+			<ul>
+				<li class="webDev1"><a href="http://fnelson.studio.mcad.edu/webdev1/final/index.html" target="_blank">My Copy <i class="fa fa-external-link"></i></a></li>
+				<li class="webDev1"><a href="http://web.archive.org/web/20130115223848/http://www.lundgrenlindqvist.se/" target="_blank">Original Site  <i class="fa fa-external-link"></i></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2>Objective</h2>
 			<p>
-				<span>Hi, I'm Frank Nelson.</span>This is my work from the MCAD Interactive Design and Marketing program.
+				To create a pixel-perfect recreation of an existing site without looking at the code, and using only HTML and CSS.
+			</p>
+			<h2>Implementation</h2>
+			<p>
+				I chose the Lungren+Lindqvist site because I was interested in minimal Swiss-style design being used on the Web. The challenge of getting the spacing and elements right was exciting.
 			</p>
 			<p>
-				My goal is to be a front-end developer, so the  work here focuses on dev and interactivity.
+				I roughed-out the 4-column layout first, as it's repeated throughout the site. Then it was a lot of trial and error getting the heights and spacing right on the different elements. I captured all the images using screenshots, but I couldn't figure out the screen-effect overlay when you hover over the images.
+			</p>
+			<p>
+				I settled on using CSS image sprites for all the images on the site, getting the total number of images down to 5, and learning a lot about image sprites along the way.
+			</p>
+			<h2>What I'd do differently now</h2>
+			<p>
+				I was really proud of the image sprites at the time (still am, in a way), but I know now that they aren't semantic, so I'd need to come up with a better solution for the overlay effect.
+			</p>
+			<p>
+				There's also more paring-down I could do in both the HTML and CSS. There are several instances of redundant CSS, like this code to eliminate the margin on columns on the right edge:
+				<pre><code>.column2{
+					width:460px;
+					margin:0 20px 0 0;
+					float:left;
+					overflow:hidden;
+					}
+				.column2-right{
+					width:460px;
+					margin:0;
+					float:left;
+					overflow:hidden;
+					}					
+				</code></pre>
+			</p>
+			<p>
+				Clearing out the redundancies will make the code cleaner and reduce the file size, making it faster overall and easier to update down the road.
 			</p>
 		</div>
-		<div class="module half">
+	</div>
+	<div class="side">
+		<div class="module">
+			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_160.png"data-fullsrc="img/webdesign1_240.png"/></a>
+		</div>
+		<div class="module">
+			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
+		</div>
+		<div class="module">
 			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
 		</div>
-		<div class="module half">
+		<div class="module">
 			<a href="webdesign2.html" class="overlay pink"><img id="webdesign2" src="img/webdesign2_160.png"alt="web design 2 final project: responsive site"data-fullsrc="img/webdesign2_240.png"/></a>
 		</div>
 		<div class="module">
-			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_320.png" alt="webdev1" data-fullsrc="img/webDev1_480.png"/></a>
-		</div>
-	</div>
-	<div class="col">
-		<div class="module half">
-			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
-		</div>
-		<div class="module half corner-top">
-		</div>
-		<div class="module">
-			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_320.png"data-fullsrc="img/webdesign1_480.png"/></a>
-		</div>
-		<div class="module half">
 			<a href="webdev2.html" class="overlay pink"><img id="webdev2"src="img/webdev2_160.png" alt="web development 2 final project: javascript plug-in"data-fullsrc="img/webdev2_160.png"/></a>
 		</div>
-		<div class="module half pink">
-		</div>
-		<div class="module half corner-right">
+		<div class="module pink corner-right">
 		</div>
 	</div>
 </div> <!-- end #wrapper -->
@@ -86,7 +121,7 @@ responsiveEnhance(document.getElementById('colorExp'), 200);
 responsiveEnhance(document.getElementById('webdesign2'), 200);
 responsiveEnhance(document.getElementById('headshot'), 200);
 responsiveEnhance(document.getElementById('webdev1'), 360);
-responsiveEnhance(document.getElementById('webdesign1'), 360);
+responsiveEnhance(document.getElementById('webdesign1'), 200);
 responsiveEnhance(document.getElementById('webdev2'), 200);
 </script>
 </html>

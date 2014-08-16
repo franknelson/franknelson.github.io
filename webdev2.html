@@ -1,0 +1,123 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>frank nelson: MCAD portfolio</title>
+	<!-- viewport settings -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- CSS -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="_/css/style.css" />
+	<!-- modernizr -->
+	<script src="_/js/modernizr-2.7.2.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48773040-2', 'mcad.edu');
+	  ga('send', 'pageview');
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<div class="logo">
+			<h1><a href="index.html">fn</a></h1>
+		</div>
+		<div class="module social">
+			<ul>
+				<li><a href="https://twitter.com/TaumpyTearrs" target="_blank"><i class="fa fa-twitter-square"></i> <span>twitter</span></a></li>
+				<li><a href="http://www.linkedin.com/in/fnelson" target="_blank"><i class="fa fa-linkedin-square"></i> <span>linkedIn</span></a></li>
+				<li><a href="https://github.com/franknelson" target="_blank"><i class="fa fa-github-square"></i> <span>github</span></a></li>
+				<li><a href="img/FrankNelson_CV.pdf" target="_blank"><i class="fa fa-file-text"></i> <span>resume</span></a></li>
+			</ul>
+		</div>
+		<div class="module corner">
+		</div>
+	</header>
+	<div class="article">
+		<div class="top">
+			<h1>
+			Javascript plug-in for testing responsive designs
+			</h1>
+			<img id="webdev2"src="img/banner_webdev2_280.png" alt="web dev 2 final project" data-fullsrc="img/banner_webdev2_650.png"/>
+			<ul>
+				<li><a href="http://fnelson.studio.mcad.edu/webdev2/final/index.html" target="_blank">Go to site<i class="fa fa-external-link"></i></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2>Objective</h2>
+			<p>
+				To build a plug-in tool with javascript that could be used on a site we were working on. Since I was working on a responsive site, I chose to build a tool to create a pop-up window the size of a different device so you could see how the layout looked at that size.
+			</p>
+			<h2>Implementation</h2>
+			<p>
+				I used <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome icons</a> to represent the device sizes, and jQuery to create the hide/show effect on the menu.
+			</p>
+			<p>
+				It took a lot of trial and error to come to get the device withs and sizes working properly, but the code itself is pretty simple:
+			</p>
+			<pre><code>openNewWindow: function(){
+						//new window features, size, options...etc
+						//35px added to width to accomodate scroll bar and outer border of window
+						var newPop;
+						var currentURL= window.location.href;
+						var maxW = screen.width;
+						var maxH = screen.height;
+						var newWinSpecs = "scrollbars=yes,status=yes,height=1,width=1";
+
+					$('#desktop').click (function(){
+						if(window.isPopup===undefined){
+						console.log("you just clicked on the desktop!");
+						newPop = window.open(currentURL, "", newWinSpecs);
+						newPop.resizeTo(maxW, maxH);
+						newPop.isPopup = true;
+						}
+						else{
+						window.resizeTo(maxW, maxH);
+						}
+					});
+			</code></pre>
+			<p>
+				It was really satisfying when the I got the tool to work properly. Javascript was really challenging to learn bacause I had been so used to how concrete HTML and CSS are as languages. The abstract nature of javascript was hard to adjust to, but I recognize how much power it has. I'm looking forward to learning more.
+			</p>
+		</div>
+	</div>
+	<div class="side">
+		<div class="module">
+			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_160.png"data-fullsrc="img/webdesign1_240.png"/></a>
+		</div>
+		<div class="module">
+			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
+		</div>
+		<div class="module">
+			<a href="webdesign2.html" class="overlay pink"><img id="webdesign2" src="img/webdesign2_160.png"alt="web design 2 final project: responsive site"data-fullsrc="img/webdesign2_240.png"/></a>
+		</div>
+		<div class="module">
+			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>			
+		</div>
+		<div class="module">
+			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_160.png" alt="webdev1" data-fullsrc="img/webDev1_240.png"/></a>
+		</div>
+		<div class="module pink corner-right">
+		</div>
+	</div>
+</div> <!-- end #wrapper -->
+</body>
+<script src="_/js/responsive-enhance.js"></script>
+<script>
+responsiveEnhance(document.getElementById('colorExp'), 200);
+responsiveEnhance(document.getElementById('webdesign2'), 200);
+responsiveEnhance(document.getElementById('headshot'), 200);
+responsiveEnhance(document.getElementById('webdev1'), 200);
+responsiveEnhance(document.getElementById('webdesign1'), 200);
+responsiveEnhance(document.getElementById('webdev2'), 360);
+</script>
+</html>
