@@ -106,7 +106,7 @@ header{width:20%; position:relative;float:left; background:pink;}
 .top  li{width:50%; float:right; margin:4% 0 0 0; display:inline; line-height:24px;}
 .top li a{background:rgb(30,30,30); padding:5%; color:rgb(250,250,250);border-radius:.6em; float:right;transition:all 0.2s ease;}
 .top li a:hover, .top li a:active{background:rgb(30,148,175);}
-header ul{width:50%;margin:23% auto 0;}
+header ul{width:60%;margin:18% auto 0;}
 header li{margin:0 0 2% 0; font-size:20px;}
 header li:last-child{margin:0;}
 header li a{color:rgb(35, 35, 35);}
