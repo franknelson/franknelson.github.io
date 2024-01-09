@@ -1,87 +1,68 @@
-<!doctype html>
-<html>
-<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>frank nelson: MCAD portfolio</title>
-	<!-- viewport settings -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- CSS -->
-	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="style.css" />
-	<!-- modernizr -->
-	<script src="modernizr-2.7.2.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frank Nelson: Drupal developer</title>
+	<meta name="title" content="Frank Nelson: Drupal developer" />
+	<meta name="description" content="Frank Nelson: Drupal developer" />
 
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://franknelson.github.io/" />
+	<meta property="og:title" content="Frank Nelson: Drupal developer" />
+	<meta property="og:description" content="Frank Nelson: Drupal developer" />
+	<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://franknelson.github.io/" />
+	<meta property="twitter:title" content="Frank Nelson: Drupal developer" />
+	<meta property="twitter:description" content="Frank Nelson: Drupal developer" />
+	<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+	<!-- style -->
+	<style>
+		:root{
+				--text: oklch(15.58% 0.025 261);
+				--background: oklch(94.7% 0.025 261);
+				--padding: 16px;
+			}
+			html{
+				background: var(--background);
+				color: var(--text);
+				font-size: 2rem;
+			}
+			body {
+				margin: 0;
+				max-width: 56ch;
+				line-height: 1.4;
+				padding: 0 var(--padding);
+				text-wrap: pretty;
+			}
+			a {
+				text-underline-offset: 3px;
+			}
+
+		@media (prefers-color-scheme: dark) {
+			:root{
+				--background: oklch(15.58% 0.025 261);
+				--text: oklch(94.7% 0.025 261);
+				--link: oklch(80% 0.0707 340.94);
+			}
+			html{
+				background: var(--background);
+				color: var(--text);
+			}
+			a {
+				color: var(--link);
+			}
+		}
+	</style>
 </head>
 <body>
-<div class="wrapper">
-	<header>
-		<div class="logo">
-			<h1><a href="index.html">fn</a></h1>
-		</div>
-		<div class="module social">
-			<ul>
-				<li><a href="https://twitter.com/TaumpyTearrs" target="_blank"><i class="fa fa-twitter-square"></i> <span>twitter</span></a></li>
-				<li><a href="http://www.linkedin.com/in/fnelson" target="_blank"><i class="fa fa-linkedin-square"></i> <span>linkedIn</span></a></li>
-				<li><a href="http://www.pinterest.com/fnelson0544/" target="_blank"><i class="fa fa-pinterest-square"></i> <span>pinterest</span></a></li>
-				<li><a href="https://github.com/franknelson" target="_blank"><i class="fa fa-github-square"></i> <span>github</span></a></li>
-				<li><a href="img/FrankNelson_webDev_cv.pdf" target="_blank"><i class="fa fa-file-text"></i> <span>resume</span></a></li>
-			</ul>
-		</div>
-		<div class="module corner">
-		</div>
-	</header>
-	<div class="col">
-		<div class="module hello">
-			<p>
-				<span>Hi, I'm Frank Nelson.</span>This is my work from the MCAD Interactive Design and Marketing program.
-			</p>
-			<p>
-				I’m passionate about responsive, lean design and efficient code.
-			</p>
-		</div>
-		<div class="module half">
-			<a href="colorExperiment.html" class="overlay pink"><img id="colorExp"src="img/colorExp_160.png" alt="color experiment" data-fullsrc="img/colorExp_240.png"/></a>
-		</div>
-		<div class="module half">
-			<a href="webdesign2.html" class="overlay pink"><img id="webdesign2" src="img/webdesign2_160.png"alt="web design 2 final project: responsive site"data-fullsrc="img/webdesign2_240.png"/></a>
-		</div>
-		<div class="module">
-			<a href="webdev1.html" class="overlay pink" ><img id="webdev1" src="img/webDev1_320.png" alt="webdev1" data-fullsrc="img/webDev1_480.png"/></a>
-		</div>
-	</div>
-	<div class="col">
-		<div class="module half">
-			<a href="about.html" class="overlay" ><img id="headshot"src="img/headshot_160.png" alt="headshot"data-fullsrc="img/headshot_240.png"/></a>
-		</div>
-		<div class="module half corner-top">
-		</div>
-		<div class="module">
-			<a href="webdesign1.html" class="overlay"><img id="webdesign1" alt="webdesign1"src="img/webdesign1_320.png"data-fullsrc="img/webdesign1_480.png"/></a>
-		</div>
-		<div class="module half">
-			<a href="webdev2.html" class="overlay pink"><img id="webdev2"src="img/webdev2_160.png" alt="web development 2 final project: javascript plug-in"data-fullsrc="img/webdev2_160.png"/></a>
-		</div>
-		<div class="module half pink">
-		</div>
-		<div class="module half corner-right">
-		</div>
-	</div>
-</div> <!-- end #wrapper -->
+	
+	<h1>Hi, I'm Frank Nelson</h1>
+	<p>I'm a front-end developer specializing in Drupal, based in Minneapolis. Here's my <a href="https://www.linkedin.com/in/fnelson/">LinkedIn profile,</a> <a href="https://codepen.io/fnelson">CodePen work,</a> <a href="https://github.com/franknelson">GitHub repos</a>...</p>
 </body>
-<script src="responsive-enhance.js"></script>
-<script>
-responsiveEnhance(document.getElementById('colorExp'), 200);
-responsiveEnhance(document.getElementById('webdesign2'), 200);
-responsiveEnhance(document.getElementById('headshot'), 200);
-responsiveEnhance(document.getElementById('webdev1'), 360);
-responsiveEnhance(document.getElementById('webdesign1'), 360);
-responsiveEnhance(document.getElementById('webdev2'), 200);
-</script>
 </html>
